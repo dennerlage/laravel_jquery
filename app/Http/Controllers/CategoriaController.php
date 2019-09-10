@@ -14,4 +14,15 @@ class CategoriaController extends Controller
     Public function create(){
         return view('categoria.create');
     }
+    
+    public function store(request $request){
+        
+        $categoria = new \App\Categoria();  
+        $categoria->nomcat = $request->get('nomcat');  
+        $categoria->save();
+        
+        redirect('/categoria');
+        
+    }
+    
 }
