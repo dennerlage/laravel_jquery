@@ -21,20 +21,34 @@
         
     </head>
     <body>
-        <a href="{{route('categoria.create')}}">Adicionar Categoria</a>
-        <table style="width:50%;">
+        <a href="{{route('cliente.create')}}">Adicionar Categoria</a>
+        <table style="width:100%;">
             <thead>
                 <tr>
                     <td>Cód</td>
                     <td>Nome</td>
-                    <td>Ação</td>
+                    <td>CPF</td>
+                    <td>Endereço</td>
+                    <td>Número</td>
+                    <td>Bairro</td>
+                    <td>Cidade</td>
+                    <td>Estado</td>
+                    <td>Telefone</td>
+                    <td></td>  
                 </tr>
             </thead>
             <tbody>
-                @foreach($categorias as $c)
+                @foreach($clientes as $c)
                 <tr>
-                    <td>{{$c->codcat}}</td>
-                    <td>{{$c->nomcat}}</td>
+                    <td>{{$c->codcli}}</td>
+                    <td>{{$c->nomcli}}</td>
+                    <td>{{$c->cpfcli}}</td> 
+                    <td>{{$c->endcli}}</td>
+                    <td>{{$c->numcli}}</td>
+                    <td>{{$c->baicli}}</td>
+                    <td>{{$c->cidcli}}</td>
+                    <td>{{$c->ufcli}}</td>
+                    <td>{{$c->telcli}}</td>
                     <td>
                         
                         <button onclick="location.href='{{route('categoria.edit', $c->codcat)}}'" type="button">Editar</button>
