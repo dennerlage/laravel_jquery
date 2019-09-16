@@ -13,7 +13,7 @@
     </head>
     <body>
         
-        <h3>Editanto a categoria {{$categoria->nomcat}}</h3>
+        <h3>Editando a categoria {{$categoria->nomcat}}</h3>
         
         <form action="{{route('categoria.update', $categoria->codcat)}}" method="post">
             @csrf

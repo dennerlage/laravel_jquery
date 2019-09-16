@@ -17,7 +17,7 @@
             <label for="nomcli">Nome Cliente</label><br/>
             <input type="text" name="nomcli" id="nomcli"/><br/><br/>
             <label for="cpfcli">CPF</label><br/>
-            <input type="text" name="cfpcli" id="cpfcli"/><br/><br/>
+            <input type="text" name="cpfcli" id="cpfcli"/><br/><br/>
             <label for="endcli">Endereço</label><br/>
             <input type="text" name="endcli" id="endcli"/><br/><br/>
             <label for="numcli">Número</label><br/>

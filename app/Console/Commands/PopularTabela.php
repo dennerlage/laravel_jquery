@@ -38,7 +38,6 @@ class PopularTabela extends Command
      */
     public function handle()
     {
-
         $vnome [] = 'Denner';
         $vnome [] = 'Cris';
         $vnome [] = 'Gabriel';
@@ -99,7 +98,6 @@ class PopularTabela extends Command
             $cliente->telcli = $tel[$i];
             $cliente->save();
 		}
-            
-            
+                             
     }
 }

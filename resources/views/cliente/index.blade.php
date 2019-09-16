@@ -21,7 +21,7 @@
         
     </head>
     <body>
-        <a href="{{route('cliente.create')}}">Adicionar Categoria</a>
+        <a href="{{route('cliente.create')}}">Adicionar Cliente</a>
         <table style="width:100%;">
             <thead>
                 <tr>
@@ -51,14 +51,13 @@
                     <td>{{$c->telcli}}</td>
                     <td>
                         
-                        <button onclick="location.href='{{route('categoria.edit', $c->codcat)}}'" type="button">Editar</button>
+                        <button onclick="location.href='{{route('cliente.edit', $c->codcli)}}'" type="button">Editar</button>
                         
-                        <form action="{{route('categoria.destroy', $c->codcat)}}" method="post">
+                        <form action="{{route('cliente.destroy', $c->codcli)}}" method="post">
                             @csrf
                             @method('DELETE')
                             <button type="submit">Excluir</button>
-                        </form>
-                    
+                        </form>     
                     </td>
                 </tr>
                 @endforeach
