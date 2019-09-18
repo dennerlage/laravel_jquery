@@ -85,9 +85,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ url('/categoria')}}">Categoria</a>
-                    <a href="{{ url('/cliente')}}">Cliente</a>
-                    <a href="{{ url('/produto')}}">Produto</a>
+                    <a href="{{url('/categoria')}}">Categoria</a>
+                    <a href="{{url('/cliente')}}">Cliente</a>
+                    <a href="{{url('/produto')}}">Produto</a>
                 </div>
             </div>
         </div>

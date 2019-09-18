@@ -29,7 +29,7 @@ class CategoriaController extends Controller
         $categoria = \App\Categoria::find($codcat);
         $categoria->delete();
         
-        return redirect('/categoria')->with('catEliminar', 'Categoria excluida');
+        return "true";
         
     }
     public function edit($codcat){
